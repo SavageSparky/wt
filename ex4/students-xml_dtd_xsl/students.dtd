@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Students (Student*)>
+<!ELEMENT Student (firstName,middleName?,lastName,(rollNo|regNo),mobileNo)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT middleName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT rollNo (#PCDATA)>
+<!ELEMENT regNo (#PCDATA)>
+<!ELEMENT mobileNo (#PCDATA)>

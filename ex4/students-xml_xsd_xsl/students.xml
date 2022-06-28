@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="students.xsl" type="text/xsl"?>
+
+<!-- SCHEMA REFERENCE -->
+<Students >
+    <Student>
+        <firstName>Hello</firstName>
+        <lastName>World</lastName>
+        <rollNo>001</rollNo>
+        <mobileNo>1234</mobileNo>
+    </Student>
+    <Student>
+        <firstName>first</firstName>
+        <middleName>middle</middleName>
+        <lastName>Name</lastName>
+        <regNo>002</regNo>
+        <mobileNo>1234</mobileNo>
+    </Student>
+</Students>

@@ -1,0 +1,46 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./christmas-g7e00def54_1920.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pincode_cont {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 2px rgb(72, 72, 72);
+  border-radius: 0.3rem;
+  background-color: rgba(240, 248, 255, 0.196);
+}
+
+label{
+  padding: 0 1rem 0 0;
+  color: rgb(87, 85, 85);
+}
+
+.pincode_cont>div {
+  margin: .4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  box-shadow: 0 0 2px black;
+  background-color: rgb(10, 173, 10);
+  color: white;
+  padding: 0.1rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+h2{ 
+  padding-top: 3rem;
+}

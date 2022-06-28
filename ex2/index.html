@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Ex-2 form Validation</title>
+</head>
+<body>
+  <h1>Form Validation</h1>
+  <section id="form_section">
+    <form name="myForm" action="">
+      <div>
+        <label for="fname">First Name </label>
+        <input class="textbox" type="text" id="fname" name="fname">
+      </div>
+      <div>
+        <label for="lname">Last Name </label>
+        <input class="textbox" type="text" id="lname" name="lname">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input class="textbox" type="email" id="email" name="email">
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input class="textbox" type="number" id="age" name="age" min="18" max="120">
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input class="textbox" type="password" id="password" name="password">
+      </div>
+      <div>
+        <label for="repassword">Confirm Password</label>
+        <input class="textbox" type="password" id="repassword" name="repassword">
+      </div>
+      <div class="radio_cont">
+        <p>Do you have prior experience in Web Development?</p>
+        <div class="yes_radio">
+          <input type="radio" id="ux_yes" name="ux" required>
+          <label for="ux_yes">Yes</label>
+        </div>
+        <div class="no_radio">
+          <input type="radio" id="ux_no" name="ux" required>
+          <label for="ux_no">No</label>
+        </div>
+      </div>
+      <input type="submit" id="submit">
+    </form>
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>

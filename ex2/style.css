@@ -1,0 +1,78 @@
+*{
+  font-family: sans-serif;
+}  
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./wood-g03d5c567b_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #b64525;
+}
+
+#form_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: 0 0 2px rgb(72, 72, 72);
+  border-radius: 0.3rem;
+  background-color: rgba(240, 248, 255, 0.196);
+}
+
+label{
+  padding: 0 1rem 0 0;
+}
+
+label, form p {
+  color: rgb(87, 85, 85);
+}
+
+form>div {
+  margin: .4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#submit {
+  width: 100px;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: rgb(34, 178, 34);
+  color: white;
+  padding: 0.3rem;
+  margin: auto;
+}
+
+.textbox {
+  border: none;
+  box-shadow: 0 0 3px #cecece;
+  border-radius: 10px;
+  width: 250px;
+  padding: 0.1rem 0.5rem;
+}
+
+.yes_radio, .no_radio {
+  padding-left: 1rem;
+}
