@@ -181,3 +181,29 @@
 </html>
 
 
+
+C:\Program Files\MySQL\bin>mysql -u root -p
+Enter password: ********
+
+mysql> use TEST;
+mysql> create table Employees
+   (
+      id int not null,
+      age int not null,
+      first varchar (255),
+      last varchar (255)
+   );
+Query OK, 0 rows affected (0.08 sec)
+mysql>
+
+mysql> INSERT INTO Employees VALUES (100, 18, 'Zara', 'Ali');
+Query OK, 1 row affected (0.05 sec)
+ 
+mysql> INSERT INTO Employees VALUES (101, 25, 'Mahnaz', 'Fatma');
+Query OK, 1 row affected (0.00 sec)
+ 
+mysql> INSERT INTO Employees VALUES (102, 30, 'Zaid', 'Khan');
+Query OK, 1 row affected (0.00 sec)
+ 
+mysql> INSERT INTO Employees VALUES (103, 28, 'Sumit', 'Mittal');
+Query OK, 1 row affected (0.00 sec)
