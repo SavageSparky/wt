@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h1 id="title">Sum of integers which are divisible by 3 between 1 to 1000</h1>
+    <div class="center">
+    <br><br>
+ 
+    <form id="loginform" >
+        <br><br>
+        <label class="txt_field"  >Enter No 1:</label>
+        <input class="txt_field" type="number" id="a">
+        <br><br>
+        <label class="txt_field" >Enter No 2:</label>
+        <input type="number" id="b" >
+        <br><br>
+        <input class="subbtn" type="button" value="CLick"  onclick="divsum()">
+        <br><br>
+        <label class="txt_field"  >Answer:</label>
+        <input readonly type="number" value="0" id="output">
+        <label class="txt_field"  >Answer:</label>
+        <input readonly type="number" value="0" id="prime">
+
+        <br><br>
+    </form>
+ 
+</div>
+ 
+    <script>
+        function isPrime(num){
+            if(num==1||num==0){
+                return false;
+            }
+            for(let i=2; i<=num/2;i++){
+                if(num%i==0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        function divsum(){
+        var a, b, i;
+        a = +document.getElementById("a").value
+        b = +document.getElementById("b").value
+        console.log("a :"+a)
+        console.log("b :"+b)
+        let count = 0;
+        for(let i=a;i<=b;i++){
+            if(isPrime(i)){
+                count = count + i;
+            }
+        }
+        console.log(count);
+        var sum=0;
+        for (i = a; i <= b; i++) {
+        if (i % 3 == 0) {
+            sum=sum+i;
+           
+            
+        }
+        }
+        document.getElementById("output").value=sum;
+        document.getElementById("prime").value=count;
+    }
+        
+    </script>
+    
+</body>
+</html>
